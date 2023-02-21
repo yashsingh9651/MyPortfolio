@@ -1,0 +1,7 @@
+.customClass1{
+    background-image: url('./bg.jpg');background-size: cover;background-repeat: no-repeat
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
