@@ -488,8 +488,8 @@ video {
 .right-5 {
   right: 1.25rem;
 }
-.top-0 {
-  top: 0px;
+.top-3 {
+  top: 0.75rem;
 }
 .top-\[16vw\] {
   top: 16vw;
@@ -685,6 +685,10 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-\[\#323330\] {
   --tw-bg-opacity: 1;
