@@ -10,6 +10,9 @@
 .swiper{
     max-width: 1240px !important;margin: auto
 };
+body{
+    box-sizing: border-box !important;
+}
 /*
 ! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
@@ -488,9 +491,6 @@ video {
 .mb-5{
     margin-bottom: 1.25rem;
 }
-.mr-2{
-    margin-right: 0.5rem;
-}
 .mt-8{
     margin-top: 2rem;
 }
@@ -581,8 +581,8 @@ video {
 .w-\[90vw\]{
     width: 90vw;
 }
-.w-\[96vw\]{
-    width: 96vw;
+.w-\[93vw\]{
+    width: 93vw;
 }
 .w-full{
     width: 100%;
@@ -661,9 +661,6 @@ video {
 }
 .overflow-hidden{
     overflow: hidden;
-}
-.overflow-x-hidden{
-    overflow-x: hidden;
 }
 .rounded{
     border-radius: 0.25rem;
@@ -744,9 +741,6 @@ video {
 .p-5{
     padding: 1.25rem;
 }
-.p-9{
-    padding: 2.25rem;
-}
 .px-14{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -782,8 +776,8 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
-.text-\[9px\]{
-    font-size: 9px;
+.text-\[10px\]{
+    font-size: 10px;
 }
 .text-lg{
     font-size: 1.125rem;
