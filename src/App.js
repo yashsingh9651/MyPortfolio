@@ -1,52 +1,25 @@
 import React from 'react';
 import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
 import { Home } from './components/Home';
-import { Navbar } from './components/Navbar';
 import { Portfolio } from './components/Portfolio';
 import { Projects } from './components/Projects';
+import { BrowserRouter, Route,Routes } from "react-router-dom";
+import { Navbar } from './components/Navbar';
 function App() {
-  if(window.location.pathname==='/'){
     return(
       <>
-    <main style={{background: 'linear-gradient(to right,#84ffc9,#aab2ff,#eca0ff)'}} className='w-screen min-h-screen text-[#002855]'>
-       <Navbar/>
-       <Home/>
-    </main>
-    </>
-    )
-  }
-  else if(window.location.pathname==='/contact'){
-    return(
-      <>
-    <main style={{background: 'linear-gradient(to right, #84ffc9, #aab2ff ,#eca0ff)'}} className='w-screen min-h-screen text-[#002855]'>
-       <Navbar/>
-    <Contact/>
-    </main>
-    </>
-    )
-  }
-  else if(window.location.pathname==='/portfolio'){
-    return(
-      <>
-    <div style={{background: 'linear-gradient(to right, #84ffc9, #aab2ff ,#eca0ff)'}} className='w-screen min-h-screen text-[#002855]'>
-       <Navbar/>
-    <Portfolio/>
+    <div style={{background: 'linear-gradient(to right,#84ffc9,#aab2ff,#eca0ff)'}} className='w-screen min-h-[100svh] text-[#002855]'>
+       <BrowserRouter basename='/MyPortfolio'>
+        <Navbar/>
+        <Routes>
+          <Route exact path='/' element={<Home/>}></Route>
+          <Route path='/portfolio' element={<Portfolio/>} ></Route>
+          <Route path='/contact' element={<Contact />} ></Route>
+          <Route path='/projects' element={<Projects/>} ></Route>
+       </Routes>
+       </BrowserRouter>
     </div>
     </>
     )
   }
-  else if(window.location.pathname==='/projects'){
-    return(
-      <>
-    <div style={{background: 'linear-gradient(to right, #84ffc9, #aab2ff ,#eca0ff)'}} className='w-screen min-h-screen text-[#002855]'>
-       <Navbar/>
-       <Projects/>
-       <Footer/>
-    </div>
-    </>
-    )
-  }
-}
-
 export default App;
