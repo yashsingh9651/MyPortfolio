@@ -16,7 +16,7 @@ import Images from '../images/index';
     },
     {
         title:'3.Tic Tac Toe Game',
-        description:"A game which we usede to play at our childhood the most mostly in schools during classses",
+        description:"A game which we used to play at our childhood the most. Mostly in schools during classses",
         image: Images.tic_tac_toe,
         url:"https://yashsingh9651.github.io/TicTacToe/",
         id:3

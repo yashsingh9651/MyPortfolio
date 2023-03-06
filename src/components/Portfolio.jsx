@@ -4,6 +4,7 @@ import {GrMapLocation} from 'react-icons/gr';
 import {FiSettings} from 'react-icons/fi';
 import {ImCss3,ImHtmlFive} from 'react-icons/im';
 import {SiJavascript,SiTailwindcss,SiExpress,SiRedux,SiVisualstudiocode,SiGithub} from 'react-icons/si';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {FaBootstrap,FaGitAlt} from 'react-icons/fa';
 import {IoLogoNodejs} from 'react-icons/io';
 import {RiReactjsLine} from 'react-icons/ri';
@@ -13,7 +14,7 @@ export const Portfolio = () => {
     <>
     <div className='max-w-[1240px] m-auto p-3 font-[Arvo] text-[#002855]'>
         <div className='flex justify-start bg-[rgba(255,255,255,0.3)] rounded p-1'>
-          <div className='w-[200px] md:w-[300px]'><img className='slideRight rounded' src={IMAGES.imgOne} alt="" /></div>
+          <div className='w-[200px] md:w-[300px]'><LazyLoadImage className='slideRight rounded' src={IMAGES.imgOne} effect="blur"/></div>
           <div className='px-2'>
           <h1 className='slideRight md:text-2xl mb-2'>I am <span className='md:text-4xl text-purple-800'>Yash Singh</span></h1>
           <h1 className='slideLeft text-[10px] md:text-xl'>Currently Living In Kota India. Having 3 Months Of Experience In Frontend Development.<br/>I Mostly Work With Java Script And Its Framework React Js.<br/>I Have Great Experence In Building Great Product From Scratch.</h1>

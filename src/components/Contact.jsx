@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Footer } from './Footer';
-import IMAGES from '../images/index'; 
+import IMAGES from '../images/index';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 export const Contact=()=>{
     const [data, setData] = useState({
         name:'',
@@ -31,7 +32,7 @@ export const Contact=()=>{
                 <div className='w-[170px] h-[170px] flex justify-center items-end md:w-[300px] md:h-[300px] bg-[rgba(255,255,255,0.4)] rounded-full animate-pulse'>
                     <div className='w-[80px] h-[80px] md:w-[150px] md:h-[150px] bg-white animate-bounce rounded-full'></div>
                 </div>
-                <div className={`w-[150px] h-[150px] rounded md:w-[275px] border border-white overflow-hidden md:h-[275px] absolute top-3 right-5 sm:left-20 md:left-40 md:top-16`}><img className='rounded' src={IMAGES.imgOne} alt=""/></div>
+                <div className={`w-[150px] h-[150px] rounded md:w-[275px] border border-white overflow-hidden md:h-[275px] absolute top-3 right-5 sm:left-20 md:left-40 md:top-16`}><LazyLoadImage className='rounded' src={IMAGES.imgOne} effect="blur"/></div>
                 <div className='font-[Arvo] hidden sm:block absolute right-0 bottom-[-4px] md:hidden lg:block lg:w-3/6 lg:top-[5vw]'>
                     <form method='POST' action='https://formspree.io/f/meqwggrb' className='flex flex-col'>
                         <input onChange={setUserData} className='rounded px-2 p-1 m-1 w-full sm:text-sm lg:text-lg' type="text" name='name' placeholder='Name' value={data.name} autoComplete='on' required/>
