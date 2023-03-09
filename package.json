@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tailwindcss": "postcss tailwind.css -o public/app.css"
+    "tailwindcss": "postcss tailwind.css -o src/index.css"
   },
   "eslintConfig": {
     "extends": [
