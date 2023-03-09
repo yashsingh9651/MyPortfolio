@@ -2,7 +2,7 @@ import Images from '../images/index';
  const ProjectData = [
     {
         title:'Kanban-Board(Jira-Clone)',
-        description:"A website where you can manage tasks like adding new task edditing tasks and also draggable function",
+        description:"A website where you can manage tasks. Like adding new task editing tasks and also draggable from 1 category to another category",
         image: Images.kanban,
         url:"https://yashsingh9651.github.io/kanban-board/",
         id:4

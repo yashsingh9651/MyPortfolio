@@ -13,7 +13,7 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <div className="box-border w-screen p-3 z-50 relative bg-[rgba(255,255,255,0.25)] shadow-[0_15px_35px_rgba(0,0,0,0.05)] md:py-8 lg:py-4">
+      <div className="customBox w-screen p-3 z-50 relative bg-[rgba(255,255,255,0.25)] shadow-[0_15px_35px_rgba(0,0,0,0.05)] backdrop-blur md:py-8 lg:py-4">
         <div className="max-w-[1240px] mx-auto flex justify-between items-center px-3">
             <div className="text-2xl font-extrabold font-[Phudu] md:text-5xl lg:text-3xl flex justify-center items-center gap-1 slideRight">
               <GiIndiaGate />
