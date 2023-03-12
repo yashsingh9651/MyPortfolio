@@ -37,7 +37,7 @@ export const Contact=()=>{
                     <form method='POST' action='https://formspree.io/f/meqwggrb' className='flex flex-col'>
                         <input onChange={setUserData} className='rounded px-2 p-1 m-1 w-full sm:text-sm lg:text-lg' type="text" name='name' placeholder='Name' value={data.name} autoComplete='on' required/>
                         <input onChange={setUserData} className='rounded px-2 p-1 m-1 w-full sm:text-sm lg:text-lg' type="email" name='email' placeholder='Email' value={data.email} autoComplete='on' required/>
-                        <textarea onChange={setUserData} value={data.message} className='rounded px-2 p-1 m-1 w-full sm:text-sm lg:text-lg h-[20vw] sm:h-[8vw]' name="message" placeholder='Message' required autoComplete='off'></textarea>
+                        <textarea onChange={setUserData} value={data.message} className='resize-none rounded px-2 p-1 m-1 w-full sm:text-sm lg:text-lg sm:h-[8vw]' name="message" placeholder='Message' required autoComplete='off'></textarea>
                         <input onClick={sendData} className='p-1 w-full m-1 mb-5 rounded bg-[rgba(255,255,255,0.35)] active:scale-90 font-semibold hover:bg-[rgba(255,255,255,0.7)] sm:font-extralight sm:text-sm lg:font-bold lg:text-xl' type="submit" value="Send"/>
                     </form>
                 </div>
@@ -46,7 +46,7 @@ export const Contact=()=>{
                     <form method='POST' action='https://formspree.io/f/meqwggrb'>
                         <input onChange={setUserData} className='rounded px-2 p-1 m-1 w-11/12 md:text-2xl' type="text" name='name' placeholder='Name' value={data.name} autoComplete='on' required/>
                         <input onChange={setUserData} className='rounded px-2 p-1 m-1 w-11/12 md:text-2xl' type="email" name='email' placeholder='Email' value={data.email} autoComplete='on' required/>
-                        <textarea onChange={setUserData} className='rounded px-2 p-1 m-1 w-11/12 md:text-2xl h-[20vw]' name="message" placeholder='Message' value={data.message} required autoComplete='off'></textarea>
+                        <textarea onChange={setUserData} className='resize-none rounded px-2 p-1 m-1 w-11/12 md:text-2xl h-[20vw]' name="message" placeholder='Message' value={data.message} required autoComplete='off'></textarea>
                         <input onClick={sendData} className='p-1 w-11/12 m-1 mb-5 rounded bg-[rgba(255,255,255,0.35)] active:scale-90 font-semibold md:font-bold md:text-3xl md:mb-1' type="submit" value="Send"/>
                     </form>
                 </div>

@@ -95,6 +95,24 @@ input,textarea{
 .swiper{
     max-width: 1240px !important;margin: auto
 };
+.customBox{
+    box-sizing: border-box !important;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(236, 160, 255);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(184, 178, 178);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: gray;
+}
+::-webkit-scrollbar-corner{
+    background-color: rgb(236, 160, 255);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -12,7 +12,7 @@ import {DiMongodb} from 'react-icons/di';
 export const Portfolio = () => {
   return (
     <>
-    <div className='max-w-[1240px] m-auto p-3 font-[Arvo] text-[#002855]'>
+    <div className='max-w-[1240px] overflow-x-hidden m-auto p-3 font-[Arvo] text-[#002855]'>
         <div className='flex justify-start bg-[rgba(255,255,255,0.3)] rounded p-1'>
           <div className='w-[200px] md:w-[300px]'><LazyLoadImage className='slideRight rounded' src={IMAGES.imgOne} effect="blur"/></div>
           <div className='px-2'>

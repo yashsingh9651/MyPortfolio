@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/tailwind.css
+/postcss.config.js
 # production
 /build
 

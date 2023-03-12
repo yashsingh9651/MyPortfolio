@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 export const Projects=()=>{
   return (
     <>
-      <div className="max-w-[1240px] mx-auto flex items-center h-[88vh] mt-8 lg:mt-0">
+      <div className="max-w-[1240px] mx-auto flex justify-center overflow-x-hidden items-center h-[88vh] mt-8 lg:mt-0">
         <div className="w-[90vw] lg:w-[80vw] h-[84vh] m-auto slideRight">
           <Swiper
             effect={"coverflow"}
